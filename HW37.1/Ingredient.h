@@ -10,7 +10,8 @@ class Ingredient
 public:
 	Ingredient() : name("undefined"), time(0) {}
 
-	Ingredient(string n, float t) {}
+	Ingredient(string n, float t) 
+		: name(n), time(t) {}
 
 	string getName() const {
 		return name;
